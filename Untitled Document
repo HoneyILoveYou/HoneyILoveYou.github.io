@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Our Love Story</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+</head>
+
+<body>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				When I in American, pastor told me,<br />
+				"Everyone's life is directed by the Father. You come here, because of God's wish."<br />
+				At that time, I did not know what kind of things God want me to do.<br />
+				Then I knew that, it's to meet you.<br />
+				I realized all of these are arranged by the God,<br />
+				so I decide to write some codes to record our love story,<br />
+				following the wishes of God.<br />
+				Jun 17, 2017, We decided to be together.<br />
+				Maybe Everything seems kind of hurry.<br />
+				But we both proved our faith in the following days.<br />
+				We shared our happiness, <br />
+				and we bear difficulties together.<br />
+				Everything is so wonderful.<br />
+
+				However, sometimes I am too stupid to express my love to you,<br />
+				making you unhappy and sad.<br />
+				Then I thought,<br />
+				maybe I could try to express it through this website.<br />
+				I want to say,<br />
+				I am missing you<br />
+				every day,<br />
+				every hour,<br />
+				and every second.<br />
+				I want be with you.<br />
+				Sometimes we cannot accompany the other all the time,<br />
+				But we do know,<br />
+				our hearts are together.<br />
+				So, I don not afraid,<br />
+				cause I know you are thinking of me<br />
+				<span class="keyword">I love you, baby.</span> <br />
+				
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						My dear, We have been togehter for
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						Love u forever and ever.<br/>
+						<div class="signature">- Fan</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="disqus_thread"></div>
+			<script>
+
+			/**
+			*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+			*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+			/*
+			var disqus_config = function () {
+			this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+			this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+			};
+			*/
+			(function() { // DON'T EDIT BELOW THIS LINE
+			var d = document, s = d.createElement('script');
+			s.src = 'https://https-babyiloveyouforever-github-io.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+			})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript#disqus_thread">comments powered by Disqus.</a></noscript>
+
+
+		</div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2017, 6, 17);
+		together.setHours(0);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+<script id="dsq-count-scr" src="//https-babyiloveyouforever-github-io.disqus.com/count.js" async></script>
+</body>
+</html>
